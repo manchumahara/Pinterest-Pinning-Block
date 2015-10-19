@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+    <name>System - Pinterest Pinning Blocker</name>
+    <author>Shabab Mustafa of codeboxr team</author>
+    <creationDate>03.06.2012</creationDate>
+    <copyright>Copyright (C) 2011 - 2014 Codeboxr.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL or later</license>
+    <authorEmail>info@codeboxr.com</authorEmail>
+    <authorUrl>http://codeboxr.com</authorUrl>
+    <version>1.2</version>
+    <description>Block pinning from website-Pinterest pinning block for joomla website.</description>
+
+    <files>
+        <filename plugin="pinterestpinningblocker">pinterestpinningblocker.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="&lt;b&gt;Basic Config&lt;/b&gt;">                    
+                <field name="optionalpopup" type="radio" default="1" label="Remove On Popup"  description="Remove widget while popup up">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>            
+                </field>
+                <field name="optionalrss" type="radio" default="1" label="Remove From RSS"  description="Remove widget from RSS Feed">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>            
+                </field>
+                <field name="optionalajax" type="radio" default="1" label="Remove From Ajax"  description="Remove widget from Ajax output">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>            
+                </field>
+                <field name="skipfront" type="radio" default="1" label="Skip Home page"  description="Active plugin for home page.">
+                    <option value="1">No</option>
+                    <option value="0">Yes</option>
+                </field>
+                <field name="itemidfiltertype" type="radio" default="1" label="Item ID Filter"  description="Filter type for item id.">
+                    <option value="0">Exclude Only</option>
+                    <option value="1">Include Only</option>
+                </field>
+                <field name="skipitemid" type="text" default="" label="Filter Itemids"  description="Show/Hide for any itemids, put comma separated."/>                                            
+            </fieldset> 
+        </fields>
+    </config>
+</extension>
